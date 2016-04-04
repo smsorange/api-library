@@ -84,7 +84,7 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                     'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23&category-code=121&cabin_number=5555&dining_preference=Main&cabin-code=555',
                     'category-code' => '121',
                     'cabin_number' => '5555',
-                    'dining_preference' => 'Main',
+                    'dining-preference' => 'Main',
                     'cabin-code' => '555',
                 ]
             ],
