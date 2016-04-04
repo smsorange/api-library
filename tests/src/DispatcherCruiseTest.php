@@ -40,37 +40,37 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
             [
                 'getComponents',
                 [
-                    'data' => ''
+                    'data' => 'webservice=CostaCruisesWebservice'
                 ]
             ],
             [
                 'getAvailableCategories',
                 [
-                    'data' => ''
+                    'data' => 'webservice=CostaCruisesWebservice'
                 ]
             ],
             [
                 'getCabins',
                 [
-                    'data' => ''
+                    'data' => 'webservice=CostaCruisesWebservice'
                 ]
             ],
             [
                 'getQuote',
                 [
-                    'data' => ''
+                    'data' => 'webservice=CostaCruisesWebservice'
                 ]
             ],
             [
                 'holdCabin',
                 [
-                    'data' => ''
+                    'data' => 'webservice=CostaCruisesWebservice'
                 ]
             ],
             [
                 'book',
                 [
-                    'data' => ''
+                    'data' => 'webservice=CostaCruisesWebservice'
                 ]
             ],
         ];
