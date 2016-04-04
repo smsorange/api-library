@@ -1,0 +1,34 @@
+{
+  "name": "api-library",
+  "description": "SMS Orange API library",
+  "type": "library",
+  "homepage": "http://sms.com.mt/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Ciric",
+      "email": "iciric@smsorange.com.mt",
+      "role": "Developer"
+    },
+    {
+      "name": "Luca Pellegrino",
+      "email": "lpellegrino@smsorange.com.mt",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "iciric@smsorange.com.mt"
+  },
+  "require": {
+    "illuminate/config": "4.1.*",
+    "mashape/unirest-php": "2.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmsOrange\\": "src/"
+    }
+  }
+}

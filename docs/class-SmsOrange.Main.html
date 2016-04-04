@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class SmsOrange\Main</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-SmsOrange.html">
+						SmsOrange					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-SmsOrange.Cruise.html">Cruise</a></li>
+				<li><a href="class-SmsOrange.Dispatcher.html">Dispatcher</a></li>
+				<li class="active"><a href="class-SmsOrange.Main.html">Main</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-SmsOrange.Bookable.html">Bookable</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-SmsOrange.html" title="Summary of SmsOrange"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Main</h1>
+
+
+	<div class="description">
+	<p>Class Main</p>
+
+<p>Main abstract class for all booking services.</p>
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-SmsOrange.Cruise.html">SmsOrange\Cruise</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-SmsOrange.html">SmsOrange</a><br>
+		<b>Package:</b> SmsOrange<br>
+
+			<b>Located at</b> <a href="source-class-SmsOrange.Main.html#9-74" title="Go to source code">Main.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-SmsOrange.Main.html#22-40" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			<p>Main constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Main constructor.</p>
+
+<p>Loads up the config and sets up the API key.</p>
+
+<p>Utilizes 'illuminate/config' package.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getApiMethod" id="_getApiMethod">
+
+		<td class="attributes"><code>
+			final protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getApiMethod">#</a>
+		<code><a href="source-class-SmsOrange.Main.html#42-54" title="Go to source code">getApiMethod</a>( <span> <var>$serviceName</var></span>, <span> <var>$callerMethod</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns an API method mapped to the current action.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns an API method mapped to the current action.</p>
+
+<p>Mappings are read from the config file.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$serviceName</var></dt>
+					<dd>Tour</dd>
+					<dt><var>$callerMethod</var></dt>
+					<dd>function name bound by the Bookable contract</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>name of the API method
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="executeRequest" id="_executeRequest">
+
+		<td class="attributes"><code>
+			final protected 
+
+			Unirest\Response
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_executeRequest">#</a>
+		<code><a href="source-class-SmsOrange.Main.html#56-73" title="Go to source code">executeRequest</a>( <span> <var>$url</var></span>, <span> <var>$method</var></span>, <span> <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Executes a HTTP Request using the Unirest library (http://unirest.io)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Executes a HTTP Request using the Unirest library (http://unirest.io)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd>base url</dd>
+					<dt><var>$method</var></dt>
+					<dd>method</dd>
+					<dt><var>$body</var></dt>
+					<dd>of the request</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					Unirest\Response<br>object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="config" id="$config">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SmsOrange.Main.html#18" title="Go to source code"><var>$config</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$config" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="api_token" id="$api_token">
+		<td class="attributes"><code>
+			protected  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SmsOrange.Main.html#19" title="Go to source code"><var>$api_token</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$api_token" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="headers" id="$headers">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SmsOrange.Main.html#20" title="Go to source code"><var>$headers</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$headers" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

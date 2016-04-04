@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class SmsOrange\Dispatcher</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-SmsOrange.html">
+						SmsOrange					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-SmsOrange.Cruise.html">Cruise</a></li>
+				<li class="active"><a href="class-SmsOrange.Dispatcher.html">Dispatcher</a></li>
+				<li><a href="class-SmsOrange.Main.html">Main</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-SmsOrange.Bookable.html">Bookable</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-SmsOrange.html" title="Summary of SmsOrange"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Dispatcher</h1>
+
+
+	<div class="description">
+	<p>Class Dispatcher</p>
+
+<p>Router for the booking service requests.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-SmsOrange.html">SmsOrange</a><br>
+		<b>Package:</b> SmsOrange<br>
+
+			<b>Located at</b> <a href="source-class-SmsOrange.Dispatcher.html#4-57" title="Go to source code">Dispatcher.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-SmsOrange.Dispatcher.html#15-23" title="Go to source code">__construct</a>( <span><code><a href="class-SmsOrange.Bookable.html">SmsOrange\Bookable</a></code> <var>$service</var></span> )</code>
+
+		<div class="description short">
+			<p>Dispatcher constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Dispatcher constructor.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$service</var></dt>
+					<dd>instance of Cruise or Tour</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="search" id="_search">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_search">#</a>
+		<code><a href="source-class-SmsOrange.Dispatcher.html#25-34" title="Go to source code">search</a>( <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			<p>Calls the injected service's search method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Calls the injected service's search method.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd>search form</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>(\Unirest\Response object)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-SmsOrange.Dispatcher.html#36-45" title="Go to source code">select</a>( <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			<p>Handles package selection by service.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Handles package selection by service.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>(\Unirest\Response object)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="book" id="_book">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_book">#</a>
+		<code><a href="source-class-SmsOrange.Dispatcher.html#47-56" title="Go to source code">book</a>( <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			<p>Handles the final booking step by service.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Handles the final booking step by service.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br>(\Unirest\Response object)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/vendor
+#/config/app.php
+#/example/handler.php
+.idea
