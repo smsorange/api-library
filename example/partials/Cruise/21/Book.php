@@ -1,3 +1,3 @@
 ---------------
-Booking id: 87<?php echo $booking->booking_id; ?>
+Booking id: <?php echo $booking->booking_id; ?>
 ---------------

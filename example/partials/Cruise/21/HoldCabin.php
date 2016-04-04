@@ -85,7 +85,7 @@
                                     <div class="col-md-3">
                                         <input class="first_name name form-control input-sm" required="" type="text"
                                                autocomplete="off"
-                                               name="guest_data[<?php echo $key; ?>][first_name]" value="Luca"/>
+                                               name="guest_data[<?php echo $key; ?>][first_name]" value=""/>
                                     </div>
                                 </div>
 
@@ -97,7 +97,7 @@
                                     <div class="col-md-3">
                                         <input class="last_name name form-control input-sm" required="" type="text"
                                                autocomplete="off"
-                                               name="guest_data[<?php echo $key; ?>][last_name]" value="Pellegrino"/>
+                                               name="guest_data[<?php echo $key; ?>][last_name]" value=""/>
                                     </div>
                                 </div>
 
@@ -109,7 +109,7 @@
                                     <div class="col-md-3">
                                         <input class="localized_name name form-control input-sm" type="text"
                                                autocomplete="off"
-                                               name="guest_data[<?php echo $key; ?>][localized_name]" value="Luca"/>
+                                               name="guest_data[<?php echo $key; ?>][localized_name]" value=""/>
                                     </div>
                                 </div>
 
@@ -270,7 +270,7 @@
                                         <input type="text" autocomplete="off" required=""
                                                class="birth_date form-control input-sm"
                                                name="guest_data[<?php echo $key; ?>][birth_date]"
-                                               value="20/10/1970"
+                                               value=""
                                         />
                                     </div>
                                 </div>
@@ -283,7 +283,7 @@
                                     <div class="col-md-3">
                                         <input class="form-control input-sm" type="text" autocomplete="off"
                                                name="guest_data[<?php echo $key; ?>][place_of_birth]"
-                                               value="Caserta"/>
+                                               value=""/>
                                     </div>
                                 </div>
 
@@ -346,7 +346,7 @@
                                         <input type="text" required="" autocomplete="off"
                                                class="home_phone phone_number form-control input-sm"
                                                name="guest_data[<?php echo $key; ?>][home_phone]"
-                                               value="+35699344966"/>
+                                               value=""/>
                                     </div>
                                 </div>
 
@@ -359,7 +359,7 @@
                                         <input type="text" autocomplete="off"
                                                class="mobile_phone phone_number form-control input-sm"
                                                name="guest_data[<?php echo $key; ?>][mobile_phone]"
-                                               value="+35699344966"/>
+                                               value=""/>
                                     </div>
                                 </div>
 
@@ -371,7 +371,7 @@
                                     <div class="col-md-3">
                                         <input type="email" autocomplete="off" class="email form-control input-sm"
                                                name="guest_data[<?php echo $key; ?>][email]"
-                                        value="iciric@smsgroup.com.mt"/>
+                                        value=""/>
                                     </div>
                                 </div>
 
@@ -389,7 +389,7 @@
                                                    required=""
                                                    autocomplete="off"
                                                    name="guest_data[<?php echo $key; ?>][residence_address]"
-                                            value="Triq Moroni, Alessandro, Fl 9"/>
+                                            value=""/>
                                         </div>
                                     </div>
 
@@ -712,7 +712,7 @@
                                                    required=""
                                                    autocomplete="off"
                                                    name="guest_data[<?php echo $key; ?>][document_number]"
-                                            value="0038070A"/>
+                                            value=""/>
                                         </div>
                                     </div>
 
@@ -753,7 +753,7 @@
                                             <input type="text" required=""
                                                    autocomplete="off" class="form-control input-sm"
                                                    name="guest_data[<?php echo $key; ?>][document_issued_in_city]"
-                                                   value="VAlletta"/>
+                                                   value="Valletta"/>
                                         </div>
                                     </div>
 
