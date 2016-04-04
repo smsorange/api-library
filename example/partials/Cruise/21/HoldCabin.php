@@ -88,7 +88,6 @@
                                                name="guest_data[<?php echo $key; ?>][first_name]" value=""/>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <label class="col-md-3">
                                         Last name*:
@@ -112,7 +111,6 @@
                                                name="guest_data[<?php echo $key; ?>][localized_name]" value=""/>
                                     </div>
                                 </div>
-
                                 <div class="row ">
                                     <label class="col-md-3">
                                         Nationality*:
