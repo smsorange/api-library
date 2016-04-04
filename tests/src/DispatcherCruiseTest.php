@@ -56,6 +56,7 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 [
                     'webservice' => '21',
                     'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23',
+                    'category-code' => '121',
                 ]
             ],
             [
@@ -63,6 +64,7 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 [
                     'webservice' => '21',
                     'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23',
+                    'category-code' => '121',
                 ]
             ],
             [
@@ -70,6 +72,7 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 [
                     'webservice' => '21',
                     'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23',
+                    'category-code' => '121',
                 ]
             ],
             [
@@ -77,6 +80,7 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 [
                     'webservice' => '21',
                     'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23',
+                    'category-code' => '121',
                 ]
             ],
         ];
