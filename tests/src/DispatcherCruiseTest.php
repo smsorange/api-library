@@ -86,7 +86,14 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                     'cabin_number' => '5555',
                     'dining-preference' => 'Main',
                     'cabin-code' => '555',
-                    'guest_data' => '',
+                    'guest_data' => [
+                        0 => [
+                            'document_number' => '222',
+                        ],
+                        1 => [
+                            'document_number' => '333',
+                        ],
+                    ],
                 ]
             ],
         ];
