@@ -73,6 +73,7 @@
                             </li>
                         <?php endforeach; ?>
                     </ul>
+
                     <div class="tab-content">
                         <?php foreach (json_decode($_COOKIE['cruise-guests']) as $key => $guest): ?>
                             <div class="tab-pane fade in <?php echo ($key == 0) ? 'active' : false; ?>"
