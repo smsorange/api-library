@@ -16,13 +16,12 @@ use \Illuminate\Filesystem\Filesystem;
 abstract class Main
 {
     protected $config;
-    protected $api_token;
     protected $headers = [];
 
     /**
      * Main constructor.
      *
-     * Loads up the config and sets up the API key.
+     * Loads up the config.
      *
      * Utilizes 'illuminate/config' package.
      */
@@ -35,8 +34,6 @@ abstract class Main
         $loader = new FileLoader(new Filesystem, $configPath);
 
         $this->config = new Repository($loader, null);
-
-        $this->api_token = $this->config->get("app.api_token");
     }
 
     /**

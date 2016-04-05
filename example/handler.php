@@ -58,8 +58,8 @@ if (!empty($_POST)) {
     | State
     |--------------------------------------------------------------------------
     |
-    | For the purpose of this demo, we will save the data we need for the
-    | next step in a cookie.
+    | For the purpose of this demo, we will save the data we need for
+    | some steps in a cookie.
     |
     */
     if($bookingStep == 'Select'){
