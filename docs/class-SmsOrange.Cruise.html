@@ -20,9 +20,16 @@
 			<ul>
 				<li class="active">
 					<a href="namespace-SmsOrange.html">
-						SmsOrange					</a>
+						SmsOrange<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-SmsOrange.Cruise.html">
+						Cruise					</a>
 
 						</li>
+							</ul></li>
 			</ul>
 		</div>
 
@@ -116,7 +123,7 @@
 		<b>Namespace:</b> <a href="namespace-SmsOrange.html">SmsOrange</a><br>
 		<b>Package:</b> SmsOrange<br>
 
-			<b>Located at</b> <a href="source-class-SmsOrange.Cruise.html#4-99" title="Go to source code">Cruise.php</a>
+			<b>Located at</b> <a href="source-class-SmsOrange.Cruise.html#4-191" title="Go to source code">Cruise.php</a>
 		<br>
 	</div>
 
@@ -136,7 +143,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-SmsOrange.Cruise.html#19-42" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-SmsOrange.Cruise.html#19-41" title="Go to source code">__construct</a>( <span>string <var>$token</var></span> )</code>
 
 		<div class="description short">
 			<p>Cruise constructor.</p>
@@ -149,6 +156,11 @@
 the api parameters.</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$token</var></dt>
+					<dd></dd>
+				</dl></div>
 
 
 
@@ -171,7 +183,7 @@ the api parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_search">#</a>
-		<code><a href="source-class-SmsOrange.Cruise.html#44-61" title="Go to source code">search</a>( <span>boolean <var>$parameters</var> = <span class="php-keyword1">false</span> </span> )</code>
+		<code><a href="source-class-SmsOrange.Cruise.html#43-60" title="Go to source code">search</a>( <span>array <var>$parameters</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Implementation of the Bookable contract's search method.</p>
@@ -214,7 +226,7 @@ the api parameters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_select">#</a>
-		<code><a href="source-class-SmsOrange.Cruise.html#63-84" title="Go to source code">select</a>( <span>boolean <var>$parameters</var> = <span class="php-keyword1">false</span> </span> )</code>
+		<code><a href="source-class-SmsOrange.Cruise.html#62-81" title="Go to source code">select</a>( <span>array <var>$parameters</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Implementation of the Bookable contract's select method.</p>
@@ -245,19 +257,226 @@ the api parameters.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="getComponents" id="_getComponents">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getComponents">#</a>
+		<code><a href="source-class-SmsOrange.Cruise.html#83-100" title="Go to source code">getComponents</a>( <span>array <var>$parameters</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Implementation of the Bookable contract's getComponents method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Implementation of the Bookable contract's getComponents method.</p>
+
+<p>Calls on the service API cruise getComponents.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAvailableCategories" id="_getAvailableCategories">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAvailableCategories">#</a>
+		<code><a href="source-class-SmsOrange.Cruise.html#102-119" title="Go to source code">getAvailableCategories</a>( <span>array <var>$parameters</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Implementation of the Bookable contract's getAvailableCategories method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Implementation of the Bookable contract's getAvailableCategories method.</p>
+
+<p>Calls on the service API cruise getAvailableCategories.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCabins" id="_getCabins">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCabins">#</a>
+		<code><a href="source-class-SmsOrange.Cruise.html#121-138" title="Go to source code">getCabins</a>( <span>array <var>$parameters</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Implementation of the Bookable contract's getCabins method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Implementation of the Bookable contract's getCabins method.</p>
+
+<p>Calls on the service API cruise getCabins.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-SmsOrange.Bookable.html#_getCabins">SmsOrange\Bookable::getCabins()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQuote" id="_getQuote">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQuote">#</a>
+		<code><a href="source-class-SmsOrange.Cruise.html#140-151" title="Go to source code">getQuote</a>( <span>array <var>$parameters</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Implementation of the Bookable contract's getQuote method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Implementation of the Bookable contract's getQuote method.</p>
+
+<p>Calls on the service API cruise getQuote.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="holdCabin" id="_holdCabin">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_holdCabin">#</a>
+		<code><a href="source-class-SmsOrange.Cruise.html#153-170" title="Go to source code">holdCabin</a>( <span>array <var>$parameters</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Implementation of the Bookable contract's holdCabin method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Implementation of the Bookable contract's holdCabin method.</p>
+
+<p>Calls on the service API cruise holdCabin.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="book" id="_book">
 
 		<td class="attributes"><code>
 			 public 
 
-			mixed
+			object
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_book">#</a>
-		<code><a href="source-class-SmsOrange.Cruise.html#86-97" title="Go to source code">book</a>( )</code>
+		<code><a href="source-class-SmsOrange.Cruise.html#172-189" title="Go to source code">book</a>( <span>array <var>$parameters</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Implementation of the Bookable contract's book method.</p>
@@ -269,10 +488,15 @@ the api parameters.</p>
 <p>Calls on the service API cruise book.</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed
+					object
 				</div>
 
 
@@ -310,7 +534,6 @@ the api parameters.</p>
 	<caption>Properties inherited from <a href="class-SmsOrange.Main.html#properties">SmsOrange\Main</a></caption>
 	<tr>
 		<td><code>
-			<a href="class-SmsOrange.Main.html#$api_token"><var>$api_token</var></a>, 
 			<a href="class-SmsOrange.Main.html#$config"><var>$config</var></a>, 
 			<a href="class-SmsOrange.Main.html#$headers"><var>$headers</var></a>
 		</code></td>

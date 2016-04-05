@@ -20,9 +20,16 @@
 			<ul>
 				<li class="active">
 					<a href="namespace-SmsOrange.html">
-						SmsOrange					</a>
+						SmsOrange<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-SmsOrange.Cruise.html">
+						Cruise					</a>
 
 						</li>
+							</ul></li>
 			</ul>
 		</div>
 
@@ -90,7 +97,9 @@
 
 	<div>
 		<h4>Direct known subclasses</h4>
-			<a href="class-SmsOrange.Cruise.html">SmsOrange\Cruise</a>
+			<a href="class-SmsOrange.Cruise.html">SmsOrange\Cruise</a>, 
+			<a href="class-SmsOrange.Cruise.CostaCruisesWebservice.html">SmsOrange\Cruise\CostaCruisesWebservice</a>, 
+			<a href="class-SmsOrange.Cruise.ManualCruisesWebservice.html">SmsOrange\Cruise\ManualCruisesWebservice</a>
 	</div>
 
 
@@ -104,7 +113,7 @@
 		<b>Namespace:</b> <a href="namespace-SmsOrange.html">SmsOrange</a><br>
 		<b>Package:</b> SmsOrange<br>
 
-			<b>Located at</b> <a href="source-class-SmsOrange.Main.html#9-74" title="Go to source code">Main.php</a>
+			<b>Located at</b> <a href="source-class-SmsOrange.Main.html#9-71" title="Go to source code">Main.php</a>
 		<br>
 	</div>
 
@@ -124,7 +133,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-SmsOrange.Main.html#22-40" title="Go to source code">__construct</a>( )</code>
+		<code><a href="source-class-SmsOrange.Main.html#21-37" title="Go to source code">__construct</a>( )</code>
 
 		<div class="description short">
 			<p>Main constructor.</p>
@@ -133,7 +142,7 @@
 		<div class="description detailed hidden">
 			<p>Main constructor.</p>
 
-<p>Loads up the config and sets up the API key.</p>
+<p>Loads up the config.</p>
 
 <p>Utilizes 'illuminate/config' package.</p>
 
@@ -158,7 +167,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getApiMethod">#</a>
-		<code><a href="source-class-SmsOrange.Main.html#42-54" title="Go to source code">getApiMethod</a>( <span> <var>$serviceName</var></span>, <span> <var>$callerMethod</var></span> )</code>
+		<code><a href="source-class-SmsOrange.Main.html#39-51" title="Go to source code">getApiMethod</a>( <span>string <var>$serviceName</var></span>, <span>string <var>$callerMethod</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns an API method mapped to the current action.</p>
@@ -173,9 +182,9 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$serviceName</var></dt>
-					<dd>Tour</dd>
+					<dd>Cruise, Tour</dd>
 					<dt><var>$callerMethod</var></dt>
-					<dd>function name bound by the Bookable contract</dd>
+					<dd>caller function name bound by the Bookable contract</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -201,7 +210,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_executeRequest">#</a>
-		<code><a href="source-class-SmsOrange.Main.html#56-73" title="Go to source code">executeRequest</a>( <span> <var>$url</var></span>, <span> <var>$method</var></span>, <span> <var>$body</var></span> )</code>
+		<code><a href="source-class-SmsOrange.Main.html#53-70" title="Go to source code">executeRequest</a>( <span>string <var>$url</var></span>, <span>string <var>$method</var></span>, <span>array <var>$body</var></span> )</code>
 
 		<div class="description short">
 			<p>Executes a HTTP Request using the Unirest library (http://unirest.io)</p>
@@ -214,11 +223,11 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$url</var></dt>
-					<dd>base url</dd>
+					<dd>API base url</dd>
 					<dt><var>$method</var></dt>
-					<dd>method</dd>
+					<dd>API method</dd>
 					<dt><var>$body</var></dt>
-					<dd>of the request</dd>
+					<dd>body of the request</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -272,31 +281,6 @@
 			</div>
 		</td>
 	</tr>
-	<tr data-order="api_token" id="$api_token">
-		<td class="attributes"><code>
-			protected  
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-SmsOrange.Main.html#19" title="Go to source code"><var>$api_token</var></a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$api_token" class="anchor">#</a>
-				<code></code>
-			</div>
-		</td>
-	</tr>
 	<tr data-order="headers" id="$headers">
 		<td class="attributes"><code>
 			protected  
@@ -304,7 +288,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-SmsOrange.Main.html#20" title="Go to source code"><var>$headers</var></a>
+				<a href="source-class-SmsOrange.Main.html#19" title="Go to source code"><var>$headers</var></a>
 
 			<div class="description short">
 				
