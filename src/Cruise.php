@@ -89,7 +89,7 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function getComponents($parameters = [] )
+    public function getComponents($parameters = [])
     {
         return $this->webservice($parameters['webservice'])->getComponents($parameters);
     }
@@ -128,7 +128,7 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function getQuote($parameters = [], $container)
+    public function getQuote($parameters = [])
     {
 
     }
@@ -141,7 +141,7 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function holdCabin($parameters = [], $container)
+    public function holdCabin($parameters = [])
     {
         return $this->webservice($parameters['webservice'])->holdCabin($parameters);
     }
@@ -169,5 +169,4 @@ class Cruise extends Main implements Bookable
     {
         return $this->getWebservice('Cruise', $wsId, $this->apiUrl, $this->apiParams);
     }
-
 }

@@ -1,9 +1,7 @@
 <?php
+namespace SmsOrange;
 
-use SmsOrange\Dispatcher;
-use SmsOrange\Cruise;
-
-class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
+class DispatcherCruiseTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerTestEachStepReturnsUnirestObject
@@ -28,7 +26,9 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
             [
                 'search',
                 [
-                    'data' => 'cruise_data%5Bfrom_date%5D=0&cruise_data%5Bto_date%5D=0&cruise_data%5Bcruises_cruise_line_id%5D=21&cruise_data%5Bdestination_id%5D=&cruise_data%5Bship_code%5D=0&cruise_data%5Bdeparture_port_id%5D=0'
+                    'data' => 'cruise_data%5Bfrom_date%5D=0&cruise_data%5Bto_date%5D=0
+                    &cruise_data%5Bcruises_cruise_line_id%5D=21&cruise_data%5Bdestination_id%5D=
+                    &cruise_data%5Bship_code%5D=0&cruise_data%5Bdeparture_port_id%5D=0'
                 ]
             ],
             [
@@ -55,7 +55,8 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 'getCabins',
                 [
                     'webservice' => '21',
-                    'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23&category-code=121',
+                    'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23
+                    &category-code=121',
                     'category-code' => '121',
                 ]
             ],
@@ -63,7 +64,8 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 'holdCabin',
                 [
                     'webservice' => '21',
-                    'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23&category-code=121&cabin_number=5555&dining_preference=Main',
+                    'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23
+                    &category-code=121&cabin_number=5555&dining_preference=Main',
                     'category-code' => '121',
                     'cabin_number' => '5555',
                     'dining_preference' => 'Main',
@@ -73,7 +75,9 @@ class DispatcherCruiseTest extends PHPUnit_Framework_TestCase
                 'book',
                 [
                     'webservice' => '21',
-                    'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23&category-code=121&cabin_number=5555&dining-preference=Main&cabin-code=555&guest_data[0][document_number]=222',
+                    'data' => 'cruise-code=FA07160314&webservice=CostaCruisesWebservice&cruise-guests=23
+                    &category-code=121&cabin_number=5555&dining-preference=Main&cabin-code=555
+                    &guest_data[0][document_number]=222',
                     'category-code' => '121',
                     'cabin_number' => '5555',
                     'dining-preference' => 'Main',

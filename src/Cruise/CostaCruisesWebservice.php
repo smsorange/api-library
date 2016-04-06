@@ -1,9 +1,9 @@
 <?php
 namespace SmsOrange\Cruise;
 
-use SmsOrange\Cruise;
+use SmsOrange\Main;
 
-class CostaCruisesWebservice extends Cruise
+class CostaCruisesWebservice extends Main
 {
     private $apiUrl;
     private $apiParams;
@@ -148,7 +148,7 @@ class CostaCruisesWebservice extends Cruise
         $pc = array_merge($params, $components);
         $body = array_merge($this->apiParams, $pc);
 
-        foreach($body['guest_data'] as $key => $guest){
+        foreach ($body['guest_data'] as $key => $guest) {
             $body['client_ids'][$key] = $guest['document_number'];
         }
 
@@ -156,5 +156,4 @@ class CostaCruisesWebservice extends Cruise
 
         return $resp;
     }
-
 }

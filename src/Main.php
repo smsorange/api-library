@@ -37,9 +37,9 @@ abstract class Main
 
         $this->config = new Repository($loader, null);
 
-        $this->container =  new Container();
+        $this->container = new Container();
 
-        $this->bootstrapWebserviceContainer( $this->container );
+        $this->bootstrapWebserviceContainer($this->container);
     }
 
     /**
@@ -83,9 +83,9 @@ abstract class Main
      * @param string $callerMethod caller function name bound by the Bookable contract
      * @return string name of the API method
      */
-    final protected function getApiMethod( $serviceName, $callerMethod )
+    final protected function getApiMethod($serviceName, $callerMethod)
     {
-        return $this->config->get( "app.{$serviceName}.methods." . $callerMethod );
+        return $this->config->get("app.{$serviceName}.methods." . $callerMethod);
     }
 
     /**

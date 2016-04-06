@@ -28,9 +28,9 @@ class Dispatcher
      * @param array $parameters search form
      * @return mixed (\Unirest\Response object)
      */
-    public function search( $parameters )
+    public function search($parameters)
     {
-        return $this->service->search( $parameters );
+        return $this->service->search($parameters);
     }
 
     /**
@@ -39,9 +39,9 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function select( $parameters )
+    public function select($parameters)
     {
-        return $this->service->select( $parameters );
+        return $this->service->select($parameters);
     }
 
     /**
@@ -50,9 +50,9 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function getComponents( $parameters )
+    public function getComponents($parameters)
     {
-        return $this->service->getComponents( $parameters );
+        return $this->service->getComponents($parameters);
     }
 
     /**
@@ -61,9 +61,9 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function getAvailableCategories( $parameters )
+    public function getAvailableCategories($parameters)
     {
-        return $this->service->getAvailableCategories( $parameters );
+        return $this->service->getAvailableCategories($parameters);
     }
 
     /**
@@ -72,9 +72,9 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function getCabins( $parameters )
+    public function getCabins($parameters)
     {
-        return $this->service->getCabins( $parameters );
+        return $this->service->getCabins($parameters);
     }
 
     /**
@@ -83,9 +83,9 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function getQuote( $parameters )
+    public function getQuote($parameters)
     {
-        return $this->service->getQuote( $parameters );
+        return $this->service->getQuote($parameters);
     }
 
     /**
@@ -94,9 +94,9 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function holdCabin( $parameters )
+    public function holdCabin($parameters)
     {
-        return $this->service->holdCabin( $parameters );
+        return $this->service->holdCabin($parameters);
     }
 
     /**
@@ -105,8 +105,8 @@ class Dispatcher
      * @param array $parameters
      * @return mixed (\Unirest\Response object)
      */
-    public function book( $parameters )
+    public function book($parameters)
     {
-        return $this->service->book( $parameters );
+        return $this->service->book($parameters);
     }
 }
