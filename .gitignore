@@ -1,4 +1,4 @@
 /vendor
-#/config/app.php
-#/example/handler.php
+/config/app.php
+/example/handler.php
 .idea
