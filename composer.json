@@ -21,7 +21,8 @@
   },
   "require": {
     "illuminate/config": "4.1.*",
-    "mashape/unirest-php": "2.*"
+    "mashape/unirest-php": "2.*",
+    "pimple/pimple": "~3.0"
   },
   "require-dev": {
     "phpunit/phpunit": "4.5.*"

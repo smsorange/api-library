@@ -1,9 +1,9 @@
 <?php
 namespace SmsOrange\Cruise;
 
-use SmsOrange\Main;
+use SmsOrange\Cruise;
 
-class CostaCruisesWebservice extends Main
+class CostaCruisesWebservice extends Cruise
 {
     private $apiUrl;
     private $apiParams;

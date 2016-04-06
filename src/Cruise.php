@@ -10,7 +10,7 @@ namespace SmsOrange;
  */
 class Cruise extends Main implements Bookable
 {
-    private $serviceName;
+    private $serviceName = 'Cruise';
     private $responseType;
     private $apiUrl;
     private $apiParams;
@@ -38,6 +38,7 @@ class Cruise extends Main implements Bookable
             'api_token' => $token,
             'api_type' => $this->config->get("app.Cruise.response_type"),
         ];
+
     }
 
     /**
@@ -88,15 +89,9 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function getComponents($parameters = [])
+    public function getComponents($parameters = [] )
     {
-        $webserviceName = $this->config->get("app.Cruise.webservices.{$parameters['webservice']}");
-
-        $webserviceClass = "\\SmsOrange\\Cruise\\$webserviceName";
-
-        $ws = new $webserviceClass($this->apiUrl, $this->apiParams);
-
-        return $ws->getComponents($parameters);
+        return $this->webservice($parameters['webservice'])->getComponents($parameters);
     }
 
     /**
@@ -109,13 +104,7 @@ class Cruise extends Main implements Bookable
      */
     public function getAvailableCategories($parameters = [])
     {
-        $webserviceName = $this->config->get("app.Cruise.webservices.{$parameters['webservice']}");
-
-        $webserviceClass = "\\SmsOrange\\Cruise\\$webserviceName";
-
-        $ws = new $webserviceClass($this->apiUrl, $this->apiParams);
-
-        return $ws->getAvailableCategories($parameters);
+        return $this->webservice($parameters['webservice'])->getAvailableCategories($parameters);
     }
 
     /**
@@ -128,13 +117,7 @@ class Cruise extends Main implements Bookable
      */
     public function getCabins($parameters = [])
     {
-        $webserviceName = $this->config->get("app.Cruise.webservices.{$parameters['webservice']}");
-
-        $webserviceClass = "\\SmsOrange\\Cruise\\$webserviceName";
-
-        $ws = new $webserviceClass($this->apiUrl, $this->apiParams);
-
-        return $ws->getCabins($parameters);
+        return $this->webservice($parameters['webservice'])->getCabins($parameters);
     }
 
     /**
@@ -145,7 +128,7 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function getQuote($parameters = [])
+    public function getQuote($parameters = [], $container)
     {
 
     }
@@ -158,15 +141,9 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function holdCabin($parameters = [])
+    public function holdCabin($parameters = [], $container)
     {
-        $webserviceName = $this->config->get("app.Cruise.webservices.{$parameters['webservice']}");
-
-        $webserviceClass = "\\SmsOrange\\Cruise\\$webserviceName";
-
-        $ws = new $webserviceClass($this->apiUrl, $this->apiParams);
-
-        return $ws->holdCabin($parameters);
+        return $this->webservice($parameters['webservice'])->holdCabin($parameters);
     }
 
     /**
@@ -177,15 +154,20 @@ class Cruise extends Main implements Bookable
      * @param array $parameters
      * @return object
      */
-    public function book($parameters = [])
+    public function book($parameters = [], $container = null)
     {
-        $webserviceName = $this->config->get("app.Cruise.webservices.{$parameters['webservice']}");
+        return $this->webservice($parameters['webservice'])->book($parameters);
+    }
 
-        $webserviceClass = "\\SmsOrange\\Cruise\\$webserviceName";
-
-        $ws = new $webserviceClass($this->apiUrl, $this->apiParams);
-
-        return $ws->book($parameters);
+    /**
+     * Call the getWebservice method of the parent, with preset service
+     *
+     * @param $wsId
+     * @return mixed
+     */
+    private function webservice($wsId)
+    {
+        return $this->getWebservice('Cruise', $wsId, $this->apiUrl, $this->apiParams);
     }
 
 }
