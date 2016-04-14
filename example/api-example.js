@@ -121,13 +121,10 @@ function CruiseBookCallback() {
 function initDataTable(elem) {
 
     $(elem).DataTable({
-        "pageLength": 5
-    });
-
-    $(elem + ' tbody').on('click', 'tr', function () {
-
-        console.log($(this).attr('class'));
-
+        "pageLength": 5,
+        "fnDrawCallback": function() {
+            initRequestHandler();
+        }
     });
 
 }
